@@ -13,7 +13,7 @@ import { createFilter } from 'rollup-pluginutils'
 function rollupPluginStylus(options = {}) {
   const filter = createFilter(options.include, options.exclude)
 
-  const includeRuntime = options.includeRuntime !== false
+  let includeRuntime = options.includeRuntime !== false
 
   return {
     name: 'regenerator',
@@ -22,6 +22,7 @@ function rollupPluginStylus(options = {}) {
         return null
 
       const result = regenerator.compile(code, { includeRuntime }).code
+      includeRuntime = false
 
       return {
         code: result.toString(),
