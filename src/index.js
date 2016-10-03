@@ -16,6 +16,7 @@ function rollupPluginStylus(options = {}) {
   const includeRuntime = options.includeRuntime !== false
 
   return {
+    name: 'regenerator',
     transform: (code, id) => {
       if (!filter(id))
         return null
