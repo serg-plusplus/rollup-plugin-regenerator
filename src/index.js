@@ -10,7 +10,7 @@ import { createFilter } from 'rollup-pluginutils'
  *   @param {Boolean} includeRuntime - include regenerator polyfills (default: true)
  * @return {Object} rollup plugin with transform function
  */
-function rollupPluginStylus(options = {}) {
+function rollupPluginRegenerator(options = {}) {
   const filter = createFilter(options.include, options.exclude)
 
   let includeRuntime = options.includeRuntime !== false
@@ -32,4 +32,4 @@ function rollupPluginStylus(options = {}) {
   }
 }
 
-export default rollupPluginStylus
+export default rollupPluginRegenerator
