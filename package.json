@@ -1,9 +1,6 @@
 {
   "name": "rollup-plugin-regenerator",
   "version": "0.3.0",
-  "main": "dist/rollup-plugin-regenerator.js",
-  "module": "dist/rollup-plugin-regenerator.es.js",
-  "jsnext:main": "dist/rollup-plugin-regenerator.es.js",
   "license": "MIT",
   "description": "A Rollup.js plugin to transpile ECMAScript 6 generator functions",
   "author": "noTruth",
@@ -22,18 +19,5 @@
     "generator",
     "async",
     "transpiler"
-  ],
-  "files": [
-    "src",
-    "dist"
-  ],
-  "dependencies": {
-    "regenerator": "^0.9.7"
-  },
-  "devDependencies": {
-    "rollup": "^0.36.4"
-  },
-  "scripts": {
-    "prepublish": "rollup -c"
-  }
+  ]
 }
