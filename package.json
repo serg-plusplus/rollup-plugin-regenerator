@@ -1,32 +1,32 @@
 {
   "name": "rollup-plugin-regenerator",
-  "description": "A Rollup.js plugin to compile ECMAScript 6 generator functions",
   "version": "0.3.0",
-  "author": "So What",
-  "homepage": "https://github.com/bitoffog/rollup-plugin-regenerator",
+  "main": "dist/rollup-plugin-regenerator.js",
+  "module": "dist/rollup-plugin-regenerator.es.js",
+  "jsnext:main": "dist/rollup-plugin-regenerator.es.js",
   "license": "MIT",
+  "description": "A Rollup.js plugin to transpile ECMAScript 6 generator functions",
+  "author": "noTruth",
+  "homepage": "https://github.com/noTruth/rollup-plugin-regenerator",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/bitoffog/rollup-plugin-regenerator.git"
+    "url": "git+https://github.com/noTruth/rollup-plugin-regenerator.git"
   },
   "bugs": {
-    "url": "https://github.com/bitoffog/rollup-plugin-regenerator/issues"
+    "url": "https://github.com/noTruth/rollup-plugin-regenerator/issues"
   },
   "keywords": [
     "rollup",
     "rollup-plugin",
     "regenerator",
-    "es6",
+    "generator",
     "async",
-    "generators"
+    "transpiler"
   ],
   "files": [
     "src",
-    "lib"
+    "dist"
   ],
-  "main": "lib/rollup-plugin-regenerator.cjs.js",
-  "module": "lib/rollup-plugin-regenerator.es.js",
-  "jsnext:main": "lib/rollup-plugin-regenerator.es.js",
   "dependencies": {
     "regenerator": "^0.9.7"
   },
