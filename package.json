@@ -21,9 +21,12 @@
     "transpiler"
   ],
   "devDependencies": {
-    "husky": "^0.14.3"
+    "husky": "^0.14.3",
+    "snazzy": "^7.0.0",
+    "standard": "^10.0.3"
   },
   "scripts": {
+    "lint": "standard --verbose | snazzy",
     "precommit": "echo \"Warning: no precommit specified\" && exit 0",
     "prepush": "echo \"Warning: no prepush specified\" && exit 0"
   }
