@@ -28,17 +28,10 @@
   "module": "lib/rollup-plugin-regenerator.es.js",
   "jsnext:main": "lib/rollup-plugin-regenerator.es.js",
   "dependencies": {
-    "regenerator": "^0.9.7",
-    "regenerator-runtime": "^0.10.5",
-    "rollup-pluginutils": "^2.0.1"
+    "regenerator": "^0.9.7"
   },
   "devDependencies": {
-    "babel-plugin-transform-async-to-generator": "^6.16.0",
-    "babel-plugin-transform-runtime": "^6.15.0",
-    "babel-preset-es2015-rollup": "^3.0.0",
-    "babel-runtime": "^6.11.6",
-    "rollup": "^0.36.4",
-    "rollup-plugin-babel": "^2.6.1"
+    "rollup": "^0.36.4"
   },
   "scripts": {
     "prepublish": "rollup -c"
