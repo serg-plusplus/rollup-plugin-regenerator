@@ -24,12 +24,17 @@
     "editorconfig-tools": "0.1.x",
     "husky": "^0.14.3",
     "lint-staged": "^4.3.0",
+    "prettier-standard": "^7.0.3",
     "snazzy": "^7.0.0",
     "standard": "^10.0.3"
   },
   "lint-staged": {
     "*.{cmd,html,json,md,sh,txt,xml,yml}": [
       "editorconfig-tools fix",
+      "git add"
+    ],
+    "*.js": [
+      "prettier-standard && standard",
       "git add"
     ]
   },
