@@ -2,6 +2,8 @@
   "name": "rollup-plugin-regenerator",
   "version": "0.3.0",
   "main": "lib/rollup-plugin-regenerator.js",
+  "module": "lib/rollup-plugin-regenerator.es.js",
+  "jsnext:main": "lib/rollup-plugin-regenerator.es.js",
   "license": "MIT",
   "description": "A Rollup.js plugin to transpile ECMAScript 6 generator functions",
   "author": "noTruth",
