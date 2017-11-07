@@ -1,6 +1,7 @@
 {
   "name": "rollup-plugin-regenerator",
   "version": "0.3.0",
+  "main": "lib/rollup-plugin-regenerator.js",
   "license": "MIT",
   "description": "A Rollup.js plugin to transpile ECMAScript 6 generator functions",
   "author": "noTruth",
@@ -20,6 +21,10 @@
     "async",
     "transpiler"
   ],
+  "dependencies": {
+    "regenerator": "0.11.x",
+    "rollup-pluginutils": "^2.0.1"
+  },
   "devDependencies": {
     "editorconfig-tools": "0.1.x",
     "husky": "^0.14.3",
