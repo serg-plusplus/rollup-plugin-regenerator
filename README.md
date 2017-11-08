@@ -1,12 +1,16 @@
 # rollup-plugin-regenerator
-A Rollup.js plugin to transpile ECMAScript 6 generator functions.
+A Rollup.js plugin to transform ECMAScript 6 generator functions.
 
 This [Rollup](http://rollupjs.org/) plugin will replace `async` and `generators` functions with es5 promise based functions.
-Plugin using [`regenerator`](https://github.com/facebook/regenerator) lib.
+Plugin using [`regenerator`](https://github.com/facebook/regenerator/) module.
 
 ## Install
 ```
 npm install --save-dev rollup-plugin-regenerator
+```
+or with [`yarn`](https://yarnpkg.com/)
+```
+yarn add -D rollup-plugin-regenerator
 ```
 
 ## Usage
@@ -28,12 +32,9 @@ rollup({
 * `includeRuntime`: Include regenerator polyfills (optional, default: `true`).
 
 ## Prepared answers to your questions
-- *I have a warning by Rollup: `The 'this' keyword is equivalent to 'undefined' at the top level of an ES module, and has been rewritten`*
-  Just specify `context` option in Rollup inputOptios(as shown above).
-- *Why source-maps are not generated?*
-  I was unable to implement source-maps generating with [`regenerator`](https://github.com/facebook/regenerator). Moreover, `regenerator` has a [issue](https://github.com/facebook/regenerator/issues/18) in this regard.
-- *Does it make sense to use this plugin?*
-  No! Under the hood [`regenerator`](https://github.com/facebook/regenerator) uses `babel` for transformations, so it's better to use it as a `babel` [plugin](https://github.com/babel/babel/tree/master/packages/babel-plugin-transform-regenerator).
+- *I have a warning by Rollup: `The 'this' keyword is equivalent to 'undefined' at the top level of an ES module, and has been rewritten`.* Just specify `context` option in Rollup inputOptios(as shown above).
+- *Why source-maps are not generated?* I was unable to implement source-maps generating with [`regenerator`](https://github.com/facebook/regenerator). Moreover, `regenerator` has a [issue](https://github.com/facebook/regenerator/issues/18) in this regard.
+- *Does it make sense to use this plugin?* No! Under the hood [`regenerator`](https://github.com/facebook/regenerator) uses `babel` for transformations, so it's better to use it as a `babel` [plugin](https://github.com/babel/babel/tree/master/packages/babel-plugin-transform-regenerator).
 
 ## Contributing
 1. Fork it!
