@@ -24,6 +24,7 @@
     "async"
   ],
   "dependencies": {
+    "recast": "0.12.x",
     "regenerator": "0.11.x",
     "rollup-pluginutils": "^2.0.1"
   },
