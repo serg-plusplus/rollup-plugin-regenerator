@@ -12,7 +12,6 @@
 **/.DS_Store
 **.log
 
-
 # The following paths and files are never ignored,
 # so adding them to .npmignore is pointless:
 
