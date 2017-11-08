@@ -1,0 +1,21 @@
+# Use a .npmignore file to keep stuff out of your package
+# Read about how to use .npmignore: https://docs.npmjs.com/misc/developers#keeping-files-out-of-your-package
+
+# Ignore everything
+*
+
+# But not these files...
+!lib
+!lib/**
+
+# Ignore all files named .DS_Store or ending with .log
+**/.DS_Store
+**.log
+
+# The following paths and files are never ignored,
+# so adding them to .npmignore is pointless:
+
+# package.json
+# README (and its variants)
+# CHANGELOG (and its variants)
+# LICENSE / LICENCE
