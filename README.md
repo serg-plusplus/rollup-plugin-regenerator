@@ -33,7 +33,7 @@ rollup({
 * `include`, `exclude`: A minimatch pattern, or an array of minimatch patterns of including ID, or excluding ID (optional).
 
 ## Prepared answers to your questions
-- *I have a warning by Rollup: `The 'this' keyword is equivalent to 'undefined' at the top level of an ES module, and has been rewritten`.* Just specify `context` option in Rollup inputOptios(as shown above).
+- *I have a warning by Rollup: `The 'this' keyword is equivalent to 'undefined' at the top level of an ES module, and has been rewritten`.* Just specify `context` option in Rollup input options(as shown above).
 - *Does it make sense to use this plugin?* I think no. Under the hood [`regenerator`](https://github.com/facebook/regenerator) uses `babel` for transformations, so it's better to use it as a `babel` [plugin](https://github.com/babel/babel/tree/master/packages/babel-plugin-transform-regenerator).
 
 ## Contributing
