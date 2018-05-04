@@ -1,8 +1,8 @@
 # rollup-plugin-regenerator
 A Rollup.js plugin to transform ECMAScript 6 generator and async functions.
 
-This [Rollup](http://rollupjs.org/) plugin will replace `async` and `generator` functions with ES5 Promise based functions.
-Plugin using [`regenerator`](https://github.com/facebook/regenerator/) module.
+This [Rollup](http://rollupjs.org) plugin will replace `async` and `generator` functions with ES5 Promise based functions.
+Plugin using [`regenerator`](https://github.com/facebook/regenerator) module.
 
 # BETTER SOLUTION:
 * [`rollup-plugin-nodent`](https://github.com/oligot/rollup-plugin-nodent) - 
