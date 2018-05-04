@@ -25,8 +25,8 @@
     ]
   },
   "dependencies": {
-    "recast": "0.12.x",
-    "regenerator": "0.11.x",
+    "recast": "^0.14.7",
+    "regenerator": "^0.12.3",
     "rollup-pluginutils": "^2.0.1"
   },
   "devDependencies": {
