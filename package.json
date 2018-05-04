@@ -7,25 +7,23 @@
   "engines": {
     "node": ">= 0.8"
   },
-  "license": "MIT",
   "description": "A Rollup.js plugin to transform ECMAScript 6 generator and async functions",
-  "author": "noTruth",
-  "homepage": "https://github.com/noTruth/rollup-plugin-regenerator",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/noTruth/rollup-plugin-regenerator.git"
+  "license": "MIT",
+  "scripts": {
+    "lint": "standard --verbose | snazzy",
+    "precommit": "lint-staged",
+    "prepush": "echo \"Warning: no prepush specified\" && exit 0"
   },
-  "bugs": {
-    "url": "https://github.com/noTruth/rollup-plugin-regenerator/issues"
+  "lint-staged": {
+    "*.{cmd,html,json,md,sh,txt,xml,yml}": [
+      "editorconfig-tools fix",
+      "git add"
+    ],
+    "*.js": [
+      "prettier-standard && standard",
+      "git add"
+    ]
   },
-  "keywords": [
-    "rollup",
-    "rollup-plugin",
-    "transform",
-    "regenerator",
-    "generator",
-    "async"
-  ],
   "dependencies": {
     "recast": "0.12.x",
     "regenerator": "0.11.x",
@@ -39,19 +37,21 @@
     "snazzy": "^7.0.0",
     "standard": "^10.0.3"
   },
-  "lint-staged": {
-    "*.{cmd,html,json,md,sh,txt,xml,yml}": [
-      "editorconfig-tools fix",
-      "git add"
-    ],
-    "*.js": [
-      "prettier-standard && standard",
-      "git add"
-    ]
+  "author": "notruth",
+  "homepage": "https://github.com/notruth/rollup-plugin-regenerator",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/notruth/rollup-plugin-regenerator.git"
   },
-  "scripts": {
-    "lint": "standard --verbose | snazzy",
-    "precommit": "lint-staged",
-    "prepush": "echo \"Warning: no prepush specified\" && exit 0"
-  }
+  "bugs": {
+    "url": "https://github.com/notruth/rollup-plugin-regenerator/issues"
+  },
+  "keywords": [
+    "rollup",
+    "rollup-plugin",
+    "transform",
+    "regenerator",
+    "generator",
+    "async"
+  ]
 }
