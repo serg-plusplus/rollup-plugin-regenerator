@@ -1,6 +1,6 @@
 {
   "name": "rollup-plugin-regenerator",
-  "version": "0.5.4",
+  "version": "0.6.0",
   "main": "lib/rollup-plugin-regenerator.js",
   "module": "lib/rollup-plugin-regenerator.es.js",
   "jsnext:main": "lib/rollup-plugin-regenerator.es.js",
