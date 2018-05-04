@@ -43,8 +43,5 @@ rollup({
 4. Push to the branch: `git push origin my-new-feature`
 5. Submit a pull request
 
-## Styleguide
-[![Standard - JavaScript Style Guide](https://cdn.rawgit.com/feross/standard/master/badge.svg)](https://github.com/feross/standard)
-
 ## License
 Licensed under [MIT license](LICENSE).
